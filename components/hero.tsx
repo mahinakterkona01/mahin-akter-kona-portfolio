@@ -63,7 +63,7 @@ export function Hero() {
           <div className="glass relative rounded-2xl border border-cyan/20 p-3 shadow-[0_0_40px_rgba(56,189,248,0.15)]">
             <div className="overflow-hidden rounded-xl border border-border">
               <Image
-                src="/kona.png"
+                src="/kona.jpg"
                 alt="Portrait of Mahin Akter Kona"
                 width={480}
                 height={560}
