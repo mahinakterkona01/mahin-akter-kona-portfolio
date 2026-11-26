@@ -1,42 +1,35 @@
-import { Briefcase } from 'lucide-react'
+import { UsersRound, UserRound } from 'lucide-react'
 import { SectionHeading } from './section-heading'
 
-const bullets = [
-  'Developed and trained machine learning models in Python for real-world prediction tasks.',
-  'Built data preprocessing pipelines for cleaning, transforming, and normalizing datasets.',
-  'Performed feature engineering to improve model accuracy and generalization.',
-  'Evaluated models using precision, recall, F1-score, and cross-validation metrics.',
+const contributions = [
+  {
+    project: 'AI Finance Copilot (FinMatrix)',
+    role: 'Team Leader',
+    description: 'Led project-related team activities and collaboration on an AI-powered financial decision-support solution for SMEs.',
+    Icon: UsersRound,
+  },
+  {
+    project: 'Credit Risk Scoring System',
+    role: 'Independent Project Developer',
+    description: 'Developed an independent end-to-end machine learning project focused on credit risk scoring, predictive modeling, and model explainability.',
+    Icon: UserRound,
+  },
 ]
 
 export function Experience() {
   return (
-    <section id="experience" className="mx-auto max-w-6xl px-5 py-20">
-      <SectionHeading index="01 / Experience" title="Experience" />
-
-      <div className="relative rounded-xl border border-border bg-card p-6 transition-all hover:border-cyan/40 hover:shadow-[0_0_30px_rgba(56,189,248,0.12)] sm:p-8">
-        <div className="flex flex-wrap items-start justify-between gap-4">
-          <div className="flex items-start gap-4">
-            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-cyan/30 bg-cyan/10 text-cyan">
-              <Briefcase size={20} />
-            </span>
-            <div>
-              <h3 className="text-lg font-semibold">Machine Learning Intern</h3>
-              <p className="text-cyan">CodeAlpha</p>
+    <section id="leadership" className="mx-auto max-w-6xl px-5 py-20">
+      <SectionHeading index="03 / Contributions" title="Leadership & Project Contributions" subtitle="Project roles and contributions, rather than employment history." />
+      <div className="grid gap-5 md:grid-cols-2">
+        {contributions.map(({ project, role, description, Icon }) => (
+          <article key={project} className="rounded-xl border border-border bg-card p-6 transition-colors hover:border-cyan/35 sm:p-8">
+            <div className="flex items-start gap-4">
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-cyan/25 bg-cyan/10 text-cyan"><Icon size={20} /></span>
+              <div><p className="font-mono text-xs text-cyan">{role}</p><h3 className="mt-1 text-lg font-semibold">{project}</h3></div>
             </div>
-          </div>
-          <span className="rounded-full border border-border bg-muted px-3 py-1 font-mono text-xs text-muted-foreground">
-            Sep 2026 – Oct 2026
-          </span>
-        </div>
-
-        <ul className="mt-6 space-y-3">
-          {bullets.map((b) => (
-            <li key={b} className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
-              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo" />
-              {b}
-            </li>
-          ))}
-        </ul>
+            <p className="mt-5 text-sm leading-relaxed text-muted-foreground">{description}</p>
+          </article>
+        ))}
       </div>
     </section>
   )
