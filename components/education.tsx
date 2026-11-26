@@ -3,8 +3,8 @@ import { SectionHeading } from './section-heading'
 
 const items = [
   { degree: 'BSc in Computer Science & Engineering', school: 'Northern University Bangladesh', dates: '2025 – Present', result: 'CGPA: 4.00 / 4.00', status: 'Undergraduate', featured: true },
-  { degree: 'Higher Secondary Certificate (HSC)', school: 'শরদার সূর্যমান মহিলা ডিগ্রি কলেজ', dates: 'Completed 2024', result: 'GPA: 5.00 / 5.00', featured: false },
-  { degree: 'Secondary School Certificate (SSC)', school: 'কাজীপুরা হাই স্কুল', dates: 'Completed 2022', result: 'GPA: 5.00 / 5.00', featured: false },
+  { degree: 'Higher Secondary Certificate (HSC)', school: 'Sardar Suruzzaman Mohila Degree College', dates: 'Completed 2024', result: 'GPA: 5.00 / 5.00', featured: false },
+  { degree: 'Secondary School Certificate (SSC)', school: 'Kanchura High School', dates: 'Completed 2022', result: 'GPA: 5.00 / 5.00', featured: false },
 ]
 
 export function Education() {
