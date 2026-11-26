@@ -7,9 +7,9 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const firaCode = Fira_Code({ subsets: ['latin'], variable: '--font-fira' })
 
 export const metadata: Metadata = {
-  title: 'Mahin Akter Kona — ML Researcher & Python Developer',
+  title: 'Mahin Akter Kona — CSE Undergraduate | AI/ML & Data Science',
   description:
-    'Portfolio of Mahin Akter Kona, Machine Learning Researcher & Python Developer. CSE Undergraduate at Northern University Bangladesh focused on Explainable AI, Data Science, and sustainable technology.',
+    'Portfolio of Mahin Akter Kona, CSE undergraduate at Northern University Bangladesh, interested in Artificial Intelligence, Machine Learning, Data Science, and research-oriented learning.',
   generator: 'v0.app',
   keywords: [
     'Mahin Akter Kona',
@@ -23,16 +23,16 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Mahin Akter Kona' }],
   openGraph: {
-    title: 'Mahin Akter Kona — ML Researcher & Python Developer',
+    title: 'Mahin Akter Kona — CSE Undergraduate | AI/ML & Data Science',
     description:
-      'CSE Undergraduate at Northern University Bangladesh focused on Machine Learning, Data Science, and Explainable AI.',
+      'CSE undergraduate at Northern University Bangladesh, interested in Machine Learning, Data Science, and Explainable AI.',
     type: 'website',
   },
 }
 
 export const viewport: Viewport = {
   colorScheme: 'dark',
-  themeColor: '#090d16',
+  themeColor: '#090f14',
 }
 
 export default function RootLayout({
