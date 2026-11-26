@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { Award, ExternalLink, Medal } from 'lucide-react'
 import { SectionHeading } from './section-heading'
 
@@ -28,9 +27,7 @@ export function Certifications() {
           const viewUrl = certificateUrl ?? imageUrl
           return (
             <article key={title} className="flex flex-col rounded-xl border border-cyan/30 bg-card p-6 shadow-lg shadow-cyan/5 transition-colors hover:border-cyan/50">
-              <div className="mb-4 h-56 overflow-hidden rounded-lg border border-border bg-muted/30">
-                {imageUrl ? <a href={imageUrl} target="_blank" rel="noopener noreferrer" aria-label={`Open full ${title} certificate image in a new tab`} className="block h-full w-full"><Image src={imageUrl} alt={`${title} certificate`} width={1367} height={1824} unoptimized className="h-full w-full object-contain" /></a> : certificateUrl ? <iframe src={`${certificateUrl}#toolbar=0&navpanes=0`} title={`${title} certificate preview`} loading="lazy" className="h-full w-full border-0 bg-white" /> : <span className="flex h-full items-center justify-center text-cyan"><Icon size={28} aria-hidden="true" /></span>}
-              </div>
+              <span className="mb-4 flex h-11 w-11 items-center justify-center rounded-lg border border-cyan/25 bg-cyan/10 text-cyan"><Icon size={20} aria-hidden="true" /></span>
               <h3 className="font-semibold leading-snug">{title}</h3>
               <p className="mt-1 text-sm text-cyan">{issuer}</p>
               <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">{description}</p>
