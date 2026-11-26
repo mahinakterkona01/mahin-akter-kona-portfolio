@@ -14,9 +14,9 @@ type Credential = {
 
 const credentials: Credential[] = [
   { title: 'University Activation Programme 2025', issuer: 'ICT Division · Bangladesh Computer Council · iDEA Project', description: 'Certificate of Completion · Active Participation · 2025', Icon: Award, certificateUrl: null, imageUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/uni%20activation%20program-VfhjFEQ0zrabuY7r08JIz6j3J8deF4.jpg', verificationUrl: null },
-  { title: 'Python Certification', issuer: 'freeCodeCamp', description: '300-hour Python certification.', Icon: Award, certificateUrl: null, imageUrl: null, verificationUrl: null },
-  { title: 'Introduction to Machine Learning', issuer: 'Kaggle', description: 'Introductory Machine Learning concepts and practical model-building.', Icon: Award, certificateUrl: null, imageUrl: null, verificationUrl: null },
-  { title: 'National Robotics Competition 2026', issuer: 'Hosted at IUBAT · BattleBot', description: 'Participant recognition.', Icon: Medal, certificateUrl: null, imageUrl: null, verificationUrl: null },
+  { title: 'Python Certification', issuer: 'freeCodeCamp', description: '300-hour Python certification.', Icon: Award, certificateUrl: 'https://blobs.vusercontent.net/blob/freecodecamp.org_certification_mahin_akter_kona_python-v9-HhCnuLrcCSMYYg08fSW9rxF3dJSlSO.pdf', imageUrl: null, verificationUrl: 'https://freecodecamp.org/certification/mahin_akter_kona/python-v9' },
+  { title: 'Introduction to Machine Learning', issuer: 'Kaggle', description: 'Introductory Machine Learning concepts and practical model-building.', Icon: Award, certificateUrl: null, imageUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mahin%20akter%20Kona%20-%20Intro%20to%20Machine%20Learning-d9u7dzRgBMHy4OTswk7ZoSAwzxKOCP.png', verificationUrl: null },
+  { title: 'National Robotics Competition 2026', issuer: 'Hosted at IUBAT · BattleBot', description: 'Participant recognition.', Icon: Medal, certificateUrl: null, imageUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nrc-26-KMGycVyHsPHGuIllcPRnqnwV1fiVyJ.jpg', verificationUrl: null },
 ]
 
 export function Certifications() {
@@ -33,7 +33,7 @@ export function Certifications() {
               <p className="mt-1 text-sm text-cyan">{issuer}</p>
               <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">{description}</p>
               <div className="mt-5 flex flex-wrap gap-3 border-t border-border pt-4 text-sm">
-                {viewUrl ? <a href={viewUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 font-medium text-cyan hover:text-indigo">View Certificate <ExternalLink size={14} /></a> : <span className="text-muted-foreground">Certificate upload pending</span>}
+                {viewUrl ? <a href={viewUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-10 items-center justify-center gap-2 rounded-md border border-cyan/30 bg-cyan/10 px-4 py-2 font-medium text-cyan transition-colors hover:border-cyan hover:bg-cyan/15 hover:text-indigo focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan focus-visible:ring-offset-2 focus-visible:ring-offset-background">View Certificate <ExternalLink size={14} /></a> : <span className="text-muted-foreground">Certificate upload pending</span>}
                 {verificationUrl && <a href={verificationUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 font-medium text-cyan hover:text-indigo">Verify Certificate <ExternalLink size={14} /></a>}
               </div>
             </article>
