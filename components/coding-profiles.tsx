@@ -3,9 +3,9 @@ import { SectionHeading } from './section-heading'
 import { GithubIcon } from './brand-icons'
 
 const profiles = [
-  { name: 'LeetCode', handle: 'Personal profile link pending', href: null as string | null, Icon: Code2 },
-  { name: 'Kaggle', handle: 'Personal profile link pending', href: null as string | null, Icon: LineChart },
-  { name: 'Codeforces', handle: 'Personal profile link pending', href: null as string | null, Icon: Trophy },
+  { name: 'LeetCode', handle: 'kona01', href: 'https://leetcode.com/u/kona01', Icon: Code2 },
+  { name: 'Kaggle', handle: 'mahinakterkona', href: 'https://kaggle.com/mahinakterkona', Icon: LineChart },
+  { name: 'Codeforces', handle: 'Mahin_Akter_Kona', href: 'https://codeforces.com/profile/Mahin_Akter_Kona', Icon: Trophy },
   { name: 'GitHub', handle: '@mahinakterkona01', href: 'https://github.com/mahinakterkona01', Icon: GithubIcon },
 ]
 
