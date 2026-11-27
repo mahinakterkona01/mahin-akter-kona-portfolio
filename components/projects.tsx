@@ -43,7 +43,7 @@ const projects: Project[] = [
     description: 'A research-oriented system designed to bring research-related activities into one organized platform, helping users organize research projects, source code, and academic documentation.',
     features: ['Research project organization', 'Source-code organization', 'Academic documentation'],
     technologies: [],
-    repositoryUrl: null,
+    repositoryUrl: 'https://github.com/mahinakterkona01/Resorium',
   },
   {
     name: 'LeetCode SQL 50 Solutions',

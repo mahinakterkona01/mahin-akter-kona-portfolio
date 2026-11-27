@@ -25,9 +25,9 @@ export function Hero() {
             <a href="#projects" className="inline-flex items-center gap-2 rounded-lg bg-cyan px-5 py-3 text-sm font-semibold text-[#071712] transition-all hover:-translate-y-0.5 hover:shadow-[0_0_24px_rgba(83,213,181,0.25)]">
               View Projects <ArrowRight size={16} />
             </a>
-            <span aria-label="CV upload pending" title="CV upload pending" className="inline-flex cursor-not-allowed items-center gap-2 rounded-lg border border-border bg-card px-5 py-3 text-sm font-medium text-muted-foreground">
-              <Download size={16} /> CV upload pending
-            </span>
+            <a href="https://blobs.vusercontent.net/blob/Kona_CV-iu9m0vkJg4C0OWEt7ZKZDRtgy8fmz5.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-5 py-3 text-sm font-medium text-foreground transition-all hover:-translate-y-0.5 hover:border-cyan/50 hover:text-cyan">
+              <Download size={16} /> View CV
+            </a>
             <a href="#contact" className="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-5 py-3 text-sm font-semibold text-foreground transition-all hover:-translate-y-0.5 hover:border-cyan/50 hover:text-cyan">
               <Mail size={16} /> Get in Touch
             </a>
