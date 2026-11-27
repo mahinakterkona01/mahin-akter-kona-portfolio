@@ -29,7 +29,7 @@ export function Navbar() {
   return (
     <header className={`fixed inset-x-0 top-0 z-50 transition-shadow duration-300 ${scrolled ? 'glass border-b border-border shadow-[0_8px_30px_rgba(0,0,0,0.35)]' : 'bg-background/85 backdrop-blur-md'}`}>
       <nav aria-label="Main navigation" className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4">
-        <a href="#home" className="shrink-0 font-mono text-base font-semibold tracking-tight"><span className="text-cyan">{'<'}</span>Mahin Akter Kona<span className="text-indigo">{' />'}</span></a>
+        <a href="#home" className="shrink-0 font-mono text-base font-semibold tracking-tight">Mahin Akter Kona</a>
         <ul className="hidden items-center gap-x-5 gap-y-2 xl:flex">
           {links.map((link) => <li key={link.href}><a href={link.href} className="whitespace-nowrap text-xs text-muted-foreground transition-colors hover:text-cyan">{link.label}</a></li>)}
         </ul>
